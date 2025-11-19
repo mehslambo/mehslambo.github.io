@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deins Kovalcuks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #4B6CB7;
+            background: linear-gradient(to right, #182848, #4B6CB7);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        section h2 {
+            color: #4B6CB7;
+            border-bottom: 2px solid #4B6CB7;
+            padding-bottom: 0.3rem;
+        }
+        a {
+            color: #4B6CB7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #eee;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+        .credentials {
+            background: #eee;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            display: inline-block;
+            margin: 0.5rem 0;
+        }
+        .indent {
+            padding-left: 20px;
+        }
+        ol li {
+            margin-bottom: 0.5rem;
+        }
+        p.dash {
+            margin: 0.3rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deins Kovalcuks</h1>
+        <p>Portfolio</p>
+    </header>
+    <main>
+        <!-- Provable Programming -->
+        <section>
+            <h2>Provable Programming in Security</h2>
+            <p>Studied <strong>Dafny</strong> for provable programming. Implemented in <strong>Python</strong> and proved correctness of Montgomery Ladder for Elliptic-curve cryptography (ECC). In this way, you don’t have to blindly trust some stranger’s implementation, but can prove the correctness of the code yourself. </p>
+            <ul>
+                <li><a href="https://github.com/mehslambo/correctcryptoalgos/blob/main/montgomery_ladder.py" target="_blank">Example: Montgomery Ladder ECC</a></li>
+            </ul>
+        </section>
+
+        <!-- Wi-Fi HaLow -->
+        <section>
+            <h2>Wi-Fi HaLow Research</h2>
+            <p>Investigated the performance of <strong>Wi-Fi HaLow</strong> under water using <strong>NS-3</strong> simulations. My contributions focused on reviewing and verifying simulation code, analyzing results, and ensuring the correct application of simulation parameters such as MCS (Modulation and Coding Scheme).</p>
+            <ul>
+                <li><a href="https://mehslambo.github.io/reports/HaLow_Research.pdf" target="_blank">Report</a></li>
+                <li><a href="https://github.com/mehslambo/2IRS0-ns3.git" target="_blank">Codebase</a></li>
+            </ul>
+        </section>
+
+        <!-- VM Detection -->
+        <section>
+            <h2>VM Detection Evasion</h2>
+            <p>Analyzed <strong>VM detection</strong> and hypervisor stealthiness for malware research. My work involved reviewing the <strong>Capev2</strong> sandbox code, documenting its architecture, and benchmarking it against popular VM detection tools like PAFish, Al-khaser and VMAware.</p>
+            <ul>
+                <li><a href="https://mehslambo.github.io/reports/Offensive_Security.pdf" target="_blank">Report</a></li>
+            </ul>
+        </section>
+
+        <!-- CTF Challenge -->
+        <section>
+            <h2>CTF Challenge</h2>
+            <p>Created a SHA-1 length extension attack challenge for <strong>WhiteHats TrojanCTF 2025</strong>.</p>
+            <ul>
+                <li><a href="https://github.com/ESHA-Trojan/TrojanCTF-2025-public/tree/main/crypto/message-integrity-violator" target="_blank">Challenge Repo</a></li>
+            </ul>
+        </section>
+
+        <!-- RoomCatchers -->
+        <section>
+            <h2>RoomCatchers</h2>
+            <p>Built a system that delivered instant room alerts to users.</p>
+            <p>Operation:</p>
+            <ol>
+                <li>Every 10 minutes, scrape housing posts from Facebook groups using <strong>Selenium</strong>.</li>
+                <li>Classify posts into spam, housing seekers, and housing offers using <strong>ChatGPT</strong>.</li>
+                <li>Send ads to housing seekers and publishing requests to landlords via Messenger.</li>
+                <li>Publish approved posts to Facebook, Instagram, Telegram, and a web news feed.</li>
+            </ol>
+            <p>Because Facebook started blocking my accounts, using more sophisticated automation detection mechanisms, and my messages to landlords started to be treated as spam, the project was shut down.</p>
+            <ul>
+                <li><a href="https://roomcatchers.com" target="_blank">Website</a></li>
+                <li><a href="https://github.com/mehslambo/roomcatchers" target="_blank">Source Code</a></li>
+            </ul>
+        </section>
+
+        <!-- CarbonInsight App -->
+        <section>
+            <h2>CarbonInsight App</h2>
+            <p>Designed the data model and implemented the front-end for product data input in <strong>React</strong>.</p>
+            <p>This web app was developed with 10 other people for <strong>Brainport Industries</strong>. It allows users to model product carbon footprints that can be shared with business customers, used for greener designs or branding and regulatory compliance.</p>
+            <ul>
+                <li><a href="https://trap.lv" target="_blank">Demo Website</a> <p class="credentials">Email: admin@example.com | Password: 1234567890</p></li>
+                <li><a href="https://github.com/mehslambo/SEP-2025-Brainport-Industries-Frontend.git" target="_blank">Frontend Code</a></li>
+                <li><a href="https://github.com/mehslambo/SEP-2025-Brainport-Industries-Backend" target="_blank">Backend Code</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
